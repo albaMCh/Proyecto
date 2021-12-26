@@ -1,0 +1,12 @@
+#datasource
+spring:
+  #zipkin server
+  datasource:
+    url: jdbc:mysql://localhost/proyecto_opbc?useSSL=false&useLegacyDatetimeCode=false&serverTimezone=UTC
+    username: root
+    password:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.MariaDB103Dialect
+    hibernate:
+      ddl-auto: create
